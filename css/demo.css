@@ -1,0 +1,54 @@
+body{
+    background-color: #000 !important;
+    color: #999;
+}
+
+/** or center the body 
+    If we didn't have a comma in the "figure div", 
+    the style would only apply to <div> tags inside the <figure> tag... 
+    but there is none.
+**/
+header, nav, footer{ 
+    text-align: center;
+}
+table{
+margin: auto;
+padding-bottom: 20px;
+}
+#me{
+    background-image: url('../img/juan_doe.png');
+    border-radius: 50px;
+    height: 500px;
+    width: 600px;
+}
+
+footer{
+    clear: left;/* stop or clear the floating*/
+    font-size: .7em;
+}
+
+nav a{ /*links in th enav bar*/
+    padding: 15px;
+    padding-bottom: 4px;
+    font-size: 1.8em;
+    text-decoration: none; /*remove underline*/
+    color: white; /* default link color is blue*/
+}
+
+nav a:hover{ /*pseudo class*/
+    border-bottom: 2px orange solid;
+    font-size: 2.0em;
+    transition: .9s; /* slow the change*/
+    
+}
+hr{
+    height: 5px;
+}
+h1{
+    font-family: Bradley Hand ITC;
+    font-size: 2.5em;
+}
+#welcomeText{
+    padding-left: 20px;
+    width: 200px;
+}

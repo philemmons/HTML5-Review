@@ -8,54 +8,71 @@ in html
 (comments can span multiple lines)
 
 -->
-<
+
 <!-- This is the head -->
 <!-- All styles and javascript go inside the head -->
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Per-son-al Port-fil-o</title>
+        <!-- cannot be in the style tags!
+        <link href="css/demo.css" rel="stylesheet" type="text/css" />
+        -->
+        <style>
+            @import url('css/demo.css');
+            body{
+                background-color: #006;
+            }
+        </style>
     </head>
 <!-- closing head -->
 
     <!-- This is the body -->
-    <!-- This is where we place the content of our website -->
+    <!-- This is where we place the content of our website
+        inline style is a BIG NO!
+    <body style = "background-color: #000; color: #FFF">
+    -->
     <body>
        <header>
-           <h1>Couchsurfer Jane</h1>
+           <h1>Couch Surfer Juan</h1>
        </header> 
         <nav>
             <hr width = 50% /> <!-- horzontal line -->
-            <a href = "index.html">Home</a>
+            <a href = "index.html"><strong>Home</strong></a>
             <a href = "about.html">About</a>
             <a href = "contect.html">Contact</a>
         </nav>
         <br><br>
-        <main>
-            
-            <figure>
-                <img src="img/juan_doe.png" alt="photo of Juan Doe a.k.a couchsurfer."/>
-            </figure>
-            <div>
-                Hello!<br>
-                <p>Thank you for visiting my couch's website.</p>
-                <p>I am a couchsurfering engineer and have been recently sleeping at the Acme Couch Corp.</p>
-                <p>Feel free to <a href= "contact.html">contact</a> me.</p>
-                <br><br>
-                <em>"With ordinary talent and extrodinary 
-                    <strong>perserverence</strong>, all couches are attainable."
-                </em><br>
-                - Millie Hasan
-            </div> 
-            
-        </main>
+     
+        <table>
+            <tr>
+                <td>
+                    <div id="me"></div>
+                </td>
+                <td>
+                <div id="welcomeText">
+                    Hello!<br>
+                    <p>Thank you for visiting my couch surfing website.</p>
+                    <p>I am a couch surfering engineer and have been recently sleeping at the Acme Couch Corp.</p>
+                    <p>Feel free to <a href= "contact.html">contact</a> me.</p>
+                    <br><br>
+                    <em>"With ordinary talent and extrodinary 
+                        <strong>perserverence</strong>, all couches are attainable."
+                    </em><br>
+                    - Millie Hasan
+                </div>
+                </td>
+            </tr>
+        </table>
+     
         <!-- This is the footer -->
         <!-- The footer goes inside the body but not always -->
         <footer>
             <hr>
-            cst438 demo. 2017&copy; philemmons<br>
-            <strong>Disclaimer:</strong>Website content is fictitous.
-            <br>Purpose: educational only.
+            2017&copy; philemmons
+            <br>CST438 Demo.: Educating one couch surfer at a time.
+            <br><img src="img/csumb_logo.gif" alt="CSUMB logo"/>
+            <br><strong>Disclaimer:</strong>Website content is fictitous.
         </footer>
         <!-- closing footer -->
         
