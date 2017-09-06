@@ -14,7 +14,7 @@ in html
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Per-son-al Port-fil-o</title>
+        <title>About Me</title>
         <!-- cannot be in the style tags!
         <link href="css/demo.css" rel="stylesheet" type="text/css" />
         -->
@@ -38,33 +38,37 @@ in html
        </header> 
         <nav>
             <hr width = 50% /> <!-- horzontal line -->
-            <a href = "index.html"><strong>Home</strong></a>
-            <a href = "about.html">About</a>
+            <a href = "index.html">Home</a>
+            <a href = "about.html"><strong>About</strong></a>
             <a href = "contect.html">Contact</a>
         </nav>
         <br><br>
-     
-        <table>
-            <tr>
-                <td>
-                    <div id="me"></div>
-                </td>
-                <td>
-                <div id="welcomeText">
-                    Hello!<br>
-                    <p>Thank you for visiting my couch surfing website.</p>
-                    <p>I am a couch surfering engineer and have been recently sleeping on the corporate couch.</p>
-                    <p>Feel free to <a href= "contact.html">contact</a> me!</p>
-                    <br><br>
-                    <em>"With ordinary talent and extrodinary 
-                        <strong>perserverence</strong>, all couches are attainable."
-                    </em><br>
-                    - Millie Hasan
-                </div>
-                </td>
-            </tr>
-        </table>
-     
+        <div id= "content">
+            <table>
+                <tr id="table-header">
+                    <td><strong>Programming Language</strong></td>
+                    <td><strong>Years Experience</strong></td>
+                </tr>
+                <tr class="table-row">
+                    <td>Java</td>
+                    <td>3</td>
+                </tr>
+                <tr class="table-row">
+                    <td>C++</td>
+                    <td>2</td> 
+                </tr>
+                <tr class="table-row">
+                    <td>PHP</td>
+                    <td>1</td>
+                </tr>
+            </table>
+            <ul>
+                <li><span class= "hobby">Cooking:</span> Researching cuilinary methods and recipes.</li>
+                <li><span class= "hobby">Music:</span> Grateful Dead brings out my inner hippie.</li>
+                <li><span class= "hobby">Designer Shoes:</span> Just when you believe you have enough shoes, there is room for another pair.</li>
+                <li><span class= "hobby">Dental Technology:</span> It just rocks!!</li>
+            </ul>
+         </div>
         <!-- This is the footer -->
         <!-- The footer goes inside the body but not always -->
         <footer>

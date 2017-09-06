@@ -1,6 +1,6 @@
-body{
+body {
     background-color: #000 !important;
-    color: #999;
+    color: #FFF;
 }
 
 /** or center the body 
@@ -8,47 +8,87 @@ body{
     the style would only apply to <div> tags inside the <figure> tag... 
     but there is none.
 **/
-header, nav, footer{ 
+
+header,
+nav,
+footer {
     text-align: center;
 }
-table{
-margin: auto;
-padding-bottom: 20px;
+
+table {
+    margin: auto;
+    padding-bottom: 20px;
 }
-#me{
+
+#me {
     background-image: url('../img/juan_doe.png');
     border-radius: 50px;
     height: 500px;
     width: 600px;
 }
 
-footer{
-    clear: left;/* stop or clear the floating*/
+footer {
+    clear: left;
+    /* stop or clear the floating*/
     font-size: .7em;
+    color: #999;
 }
 
-nav a{ /*links in th enav bar*/
+nav a {
+    /*links in th enav bar*/
     padding: 15px;
     padding-bottom: 4px;
     font-size: 1.8em;
-    text-decoration: none; /*remove underline*/
-    color: white; /* default link color is blue*/
+    text-decoration: none;
+    /*remove underline*/
+    color: white;
+    /* default link color is blue*/
 }
 
-nav a:hover{ /*pseudo class*/
+nav a:hover {
+    /*pseudo class*/
     border-bottom: 2px orange solid;
     font-size: 2.0em;
-    transition: .9s; /* slow the change*/
-    
+    transition: .9s;
+    /* slow the change*/
 }
-hr{
+
+hr {
     height: 5px;
 }
-h1{
+
+h1 {
     font-family: Bradley Hand ITC;
     font-size: 2.5em;
 }
-#welcomeText{
+
+#welcomeText {
     padding-left: 20px;
     width: 200px;
+}
+
+td {
+    padding-right: 10px;
+    font-size: 1.3em;
+}
+
+td strong {
+    color: orange;
+}
+
+#table-header {
+    background-color: #351a00;
+}
+
+.table-row {
+    background-color: #753900;
+    text-align: center;
+}
+
+ul {
+    text-align: left;
+    padding-left: 200px;
+}
+.hobby{
+    color: yellow;
 }
